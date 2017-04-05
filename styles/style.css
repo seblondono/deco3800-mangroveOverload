@@ -12,11 +12,17 @@ body {
   height: 100vh;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .fa-cog {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 3em;
+  top: 30px;
+  right: 30px;
 }
 
 #queenslandGov {
@@ -26,16 +32,18 @@ body {
 }
 
 #appTitle {
+  font-family: 'Roboto', sans-serif;
   font-size: 4em;
   margin-bottom: 10px;
 }
 
 #client {
+  font-family: 'Roboto', sans-serif;
   font-size: 3em;
     margin: 0;
 }
 
-button {
+#loginButton {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -63,6 +71,9 @@ button {
   height: 110px;
   border: 1px solid gray;
   background-color: lightgray;
+  font-size: 5em;
+  text-align: center;
+  line-height: 1.7em;
 }
 
 .numericPad {
@@ -99,6 +110,36 @@ button {
   height: 100vh;
 }
 
+.search-form {
+  width: 80%;
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 80%;
+}
+
+.suggestions li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid #D8D8D8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.8em;
+}
+
+.hl {
+  background: lightgray;
+}
+
 .searchBar {
   position: absolute;
   top: 40px;
@@ -119,14 +160,14 @@ button {
 }
 
 .fa-chevron-left {
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 
 #searchArea {
   font-family: 'Roboto', sans-serif;
   font-size: 2.8em;
   font-weight: lighter;
-  width: 75%;
+  width: 100%;
   height: 100px;
 }
 
@@ -149,4 +190,66 @@ button {
   top: 50%;
   transform: translateY(-50%);
   width: 3em;
+}
+
+.siteContent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.siteInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.site {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.site:before {
+  content: "\273F";
+  font-size: 15em;
+}
+
+#siteNumber {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 5em;
+}
+
+#siteLocation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+}
+
+.siteButton {
+  display: block;
+  width: 100%;
+  margin: 10% 0;
+  font-size: 2.5em;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: lightgray;
 }

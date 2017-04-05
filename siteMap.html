@@ -20,8 +20,13 @@
     <!-- Google Map -->
     <div id="map"></div>
     <div class="searchBar">
-      <i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
-      <input id="searchArea" type="text" name="searchArea" placeholder="Search a monitoring site">
+      <i id="site" class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+      <form class="search-form">
+        <input id="searchArea" type="text" name="searchArea" placeholder="Search a monitoring site">
+        <ul class="suggestions">
+        </ul>
+        <input type="submit" style="display:none">
+      </form>
       <i class="fa fa-microphone fa-3x" aria-hidden="true"></i>
     </div>
     <div class="currentLocation">

@@ -20,13 +20,21 @@
     <!-- Google Map -->
     <div id="map"></div>
     <div class="searchBar">
-      <i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
-      <input id="searchArea" type="text" name="searchArea" placeholder="Search a monitoring location">
+      <i id="location" class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+      <form class="search-form">
+        <input id="searchArea" type="text" name="searchArea" placeholder="Search a monitoring location">
+        <ul class="suggestions">
+        </ul>
+        <input type="submit" style="display:none">
+      </form>
       <i class="fa fa-microphone fa-3x" aria-hidden="true"></i>
     </div>
     <div class="currentLocation">
       <img id="locationIcon" src="images/locationIcon.png" alt="Current Location">
     </div>
+
+    <script type="text/javascript" src="js/data.json">
+    </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZw3Jow4NiHjyXsdRazUfPMXXb1_5U3Gg&callback=initMap">
     </script>
