@@ -1,0 +1,17 @@
+Queensland Government Logo
+http://thefashionarchives.org/wp-content/uploads/2013/08/Qld-CoA-Stylised-2LS-mono_300dpi.png
+
+iPhone 7 screen size
+1,334 x 750 pixels
+
+Normalize CSS
+https://github.com/necolas/normalize.css/blob/master/normalize.css
+
+Reset css
+http://cssreset.com/scripts/eric-meyer-reset-css/
+
+Google Maps API Key
+AIzaSyBZw3Jow4NiHjyXsdRazUfPMXXb1_5U3Gg
+
+Google API Management
+https://console.developers.google.com/apis/dashboard?project=mangrove-monitor-1491377815937&duration=PT1H

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mangrove Monitoring App</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Google Fonts Roboto and Roboto Condenced -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <!-- Google Map JavaScript -->
+    <script type="text/javascript" src="js/map-js.js"></script>
+    <!-- Font Awesome Library -->
+    <script src="https://use.fontawesome.com/5996448355.js"></script>
+  </head>
+  <body>
+    <!-- Google Map -->
+    <div id="map"></div>
+    <div class="searchBar">
+      <i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
+      <input id="searchArea" type="text" name="searchArea" placeholder="Search a monitoring location">
+      <i class="fa fa-microphone fa-3x" aria-hidden="true"></i>
+    </div>
+    <div class="currentLocation">
+      <img id="locationIcon" src="images/locationIcon.png" alt="Current Location">
+    </div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZw3Jow4NiHjyXsdRazUfPMXXb1_5U3Gg&callback=initMap">
+    </script>
+
+  </body>
+</html>
