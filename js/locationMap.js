@@ -1,18 +1,18 @@
 function initMap() {
 
-  const moretonBay = {lat:-27.308961, lng:153.421472};
+   const nudgeeBeach = {lat:-27.343968, lng:153.099107};
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: moretonBay,
-    zoom: 11,
+    center: nudgeeBeach,
+    zoom: 10,
     disableDefaultUI: true
   });
 
   var marker = new google.maps.Marker({
-    position: moretonBay,
+    position: nudgeeBeach,
     map: map
   });
 
-  const cities = ["East Gosford","City of Parramatta","Pyrmont","Boambee","Paramatta","McGraths Hill",
+  const cities = ["Nudgee Beach","East Gosford","City of Parramatta","Pyrmont","Boambee","Paramatta","McGraths Hill",
     "Ipswich","Sydney","Kingscliff","Isabella","Northgate","Boonah","Terry Hills","Beerwah","Gold Coast",
     "Tweed Heads","Yass","Redbank","Bundamba","Palm Beach","Broadbeach","Brisbane","Wynnum",
     "Gladesville","Springwood","Mapleton","Padstow","Enfield","Flinders","Brookfield","Yandina","Merewether",
@@ -265,8 +265,6 @@ function initMap() {
     } else {
       const placesArray = findPlace(this.value, cities);
 
-      console.log(placesArray);
-
       const html = placesArray.map(place => {
         const regex = new RegExp(this.value, 'gi');
         const cityName = place.replace(regex, `<span class="hl">${this.value}</span>`);
@@ -281,18 +279,36 @@ function initMap() {
     }
   }
 
-  function goBack(e) {
-    if (e.target.id == "site") {
-      window.location.href = 'locationMap.html';
-    } else if (e.target.id == 'location'){
+  function goBack() {
       window.location.href = 'index.html';
-    }
   }
+
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+  recognition.interimResults = true;
+
+
+
+  recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)
+      .map(result => result[0])
+      .map(result => result.transcript)
+      .join('');
+
+      searchBar.value = transcript;
+
+      if (e.results[0].isFinal && transcript.toLowerCase().includes("Nudgee Beach".toLowerCase())) {
+        window.location.href = 'siteMap.html';
+      }
+
+  });
 
   const searchBar = document.querySelector('#searchArea');
   const placesFound = document.querySelector('.suggestions');
   const searchForm = document.querySelector('.search-form');
   const back = document.querySelector('.fa-chevron-left');
+  const mic = document.querySelector('.mic');
+  const location = document.querySelector('.currentLocation');
 
   searchBar.addEventListener('change', displayPlaces);
   searchBar.addEventListener('keyup', displayPlaces);
@@ -301,5 +317,13 @@ function initMap() {
     window.location.href = 'siteMap.html';
   });
   back.addEventListener('click', goBack);
+  mic.addEventListener('click', function(){
+    recognition.start();
+  });
+  // location.addEventListener('click', function(){
+  //   navigator.geolocation.getLocation((data) => {
+  //   });
+  // });
+
 
 }

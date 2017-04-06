@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mangrove Monitoring App</title>
+    <!-- Font Awesome Library -->
+    <script src="https://use.fontawesome.com/5996448355.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Google Fonts Roboto and Roboto Condenced -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body>
+    <div class="siteContent">
+      <!-- Site general information -->
+      <div class="siteInfo">
+        <!-- Go Back arrow -->
+        <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+        <div class="site">
+          <div>
+            <!-- Site number -->
+            <span id="siteNumber">659143</span>
+            <!-- Site location -->
+            <span id="siteLocation">Nudgee Beach</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="siteSpecifications">
+        <form class="siteSpecs-form">
+          <div class="siteSize">
+            <label for="sizeLength">Size</label>
+            <input id="length" type="text" name="size" value="50">
+            <label for="sizeWidth">x</label>
+            <input type="text" name="sizeWidth" value="20">
+          </div>
+
+          <div class="siteOptionList">
+            <div class="siteSpecies">
+              <label for="species">Species</label>
+              <select class="species" name="species">
+                <option value="species1">Species 1</option>
+                <option value="species2">Species 2</option>
+                <option value="species3">Species 3</option>
+                <option value="species4">Species 4</option>
+                <option value="species5">Species 5</option>
+              </select>
+            </div>
+            <div class="siteThreshold">
+              <label for="threshold">Threshold</label>
+              <input class="threshold" type="text" name="threshold" placeholder="25.5 cm">
+            </div>
+            <div class="siteRecorder">
+              <label for="recorder">Recorder</label>
+              <select class="recorder" name="recorder">
+                <option value="recorder1">Recorder 1</option>
+                <option value="recorder2">Recorder 2</option>
+                <option value="recorder3">Recorder 3</option>
+                <option value="recorder4">Recorder 4</option>
+                <option value="recorder5">Recorder 5</option>
+              </select>
+            </div>
+          </div>
+          <div class="siteDate">
+            <label for="date">Date</label>
+            <input class="date" type="date" name="date" value="2017-04-07">
+          </div>
+          <div class="site-confirm-cancel">
+            <button class="site-cc cancel" type="button" name="login">Cancel</button>
+            <button class="site-cc confirm" type="submit" name="login">Confirm</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/siteSpecification.js">
+
+    </script>
+  </body>
+</html>
