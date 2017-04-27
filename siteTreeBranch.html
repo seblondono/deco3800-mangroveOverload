@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mangrove Monitoring App</title>
+    <!-- Font Awesome Library -->
+    <script src="https://use.fontawesome.com/5996448355.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Google Fonts Roboto and Roboto Condenced -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <div class="treeContent">
+        <!-- Site general information -->
+        <div class="treeHeader">
+            <!-- Go Back arrow -->
+            <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+            <div class="treeInfo">
+                <div>
+                    <!-- Species -->
+                    <span id="speciesInput">
+                    <label for="species">Species</label>
+            <input class="species" type="text" name="species"></span>
+
+                    <!-- Tree Height -->
+                    <span id="treeHeightInput">
+                        <label for="treeHeight">Tree Height</label>
+                        <input class="treeHeight" type="text" name="treeHeight">
+                        <label>cm</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="treeDBH">
+            <div id="treeDBH header">Girth at Breast Height</div>
+            <div class="boxDBH">
+                <label for="branch1">B1</label>
+                <input id="branch1" type="text" name="branch">
+                <button class="branch deadOrAlive" type="button" name="deadOrAlive"><img id="branch DoA1" src="images/alive.png" alt="Alive"></button>
+            </div>
+
+            <div class="boxDBH">
+                <label for="branch2">B2</label>
+                <input id="branch2" type="text" name="branch">
+                <button class="branch deadOrAlive" type="button" name="deadOrAlive"><img id="branch DoA2" src="images/alive.png" alt="Alive"></button>
+            </div>
+
+            <div class="boxDBH">
+                <label for="branch3">B3</label>
+                <input id="branch3" type="text" name="branch">
+                <button class="branch deadOrAlive" type="button" name="deadOrAlive"><img id="branch DoA3" src="images/dead.png" alt="Dead"></button>
+            </div>
+
+            <div class="boxDBH">
+                <label for="branch4">B4</label>
+                <input id="branch4" type="text" name="branch">
+                <button class="branch deadOrAlive" type="button" name="deadOrAlive"><img id="branch DoA4" src="images/alive.png" alt="Alive"></button>
+            </div>
+
+            <div id="treeDBH footer"><button class="btnFunction" type="button" name="addBranch"><img id="branch add" src="images/addBranch.png" alt="Add Branch"></button>
+            </div>
+            
+            
+            
+            <div id="treeFooter">
+                <hr id="treeFooter line">
+                <div class="tf left">
+                    <button class="btnFunction" type="button" name="bye"><img id="bye" src="images/cross.png" alt="Cancel"></button>
+                </div>
+                
+                <div class="tf right">
+                    <button class="btnFunction" type="button" name="ok"><img id="ok" src="images/tick.png" alt="OK!"></button>
+                </div>            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

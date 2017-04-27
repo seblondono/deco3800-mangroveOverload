@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mangrove Monitoring App</title>
+    <!-- Font Awesome Library -->
+    <script src="https://use.fontawesome.com/5996448355.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Google Fonts Roboto and Roboto Condenced -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+    <div class="siteStat">
+        <!-- Site general information -->
+        <div class="siteInfo">
+            <!-- Go Back arrow -->
+            <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+            <div class="site">
+                <div>
+                    <!-- Site number -->
+                    <span id="siteNumber">659143</span>
+                    <!-- Site location -->
+                    <span id="siteLocation">Nudgee Beach</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="siteStatGraph">
+            <!-- Stat Graph here-->
+            <img id="boxplot" src="images/boxplot.png" alt="Box plot!">
+        </div>
+
+        <div class="siteStat">
+            <!-- All Stat here-->
+            <div class="statBox">
+                <label for="stat1">Min: </label>
+                <input id="stat1" type="text" name="stat1" value="N/A" disabled>
+            </div>
+            
+            <div class="statBox">
+                <label for="stat2">Max: </label>
+                <input id="stat2" type="text" name="stat2" value="N/A" disabled>
+            </div>
+            
+            <div class="statBox">
+                <label for="stat3">Medium: </label>
+                <input id="stat3" type="text" name="stat3" value="N/A" disabled>
+            </div>
+            
+            <div class="statBox">
+                <label for="stat4">Std: </label>
+                <input id="stat4" type="text" name="stat4" value="N/A" disabled>
+            </div>
+            
+            <div class="statBox">
+                <label for="stat5">Sum: </label>
+                <input id="stat5" type="text" name="stat5" value="N/A" disabled>
+            </div>
+            
+            <div class="statBox">
+                <label for="stat6">Mod: </label>
+                <input id="stat6" type="text" name="stat6" value="N/A" disabled>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
