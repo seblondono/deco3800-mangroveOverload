@@ -1,8 +1,8 @@
 
-const ok = document.querySelector('#ok');
+const accept = document.querySelector('#accept');
 
 //Javascript fordward functionalities
-ok.addEventListener('click',function goToSiteTreeBranch() {
+accept.addEventListener('click',function goToSiteTreeBranch() {
 
   window.location.href = "siteTrees.html";
 });
