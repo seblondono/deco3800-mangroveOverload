@@ -14,7 +14,7 @@ addTree.addEventListener('click',function () {
 //go back to site specification
 finish.addEventListener('click',function () {
 
-  window.location.href = "siteSpecification.html";
+  window.location.href = "site.html";
 });
 
 // backwards
