@@ -3,7 +3,6 @@ const confirm = document.querySelector('.confirm');
 const back = document.querySelector('.back');
 
 
-
 cancel.addEventListener('click', function(){
   window.location.href = 'site.html';
 });
@@ -11,5 +10,3 @@ cancel.addEventListener('click', function(){
 back.addEventListener('click', function(){
   window.location.href = 'site.html';
 });
-
-
