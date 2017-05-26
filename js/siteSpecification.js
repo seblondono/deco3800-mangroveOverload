@@ -10,3 +10,9 @@ cancel.addEventListener('click', function(){
 back.addEventListener('click', function(){
   window.location.href = 'site.html';
 });
+
+//go from siteSpecification to siteTrees
+confirm.addEventListener('click', function(){	
+	
+	window.location.href = 'siteTrees.html'; 
+});
