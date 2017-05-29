@@ -1,5 +1,6 @@
 
 const addTree = document.querySelector('.addTree');
+const treeCount = document.querySelector('.treeCount');
 const finish = document.querySelector('.finish');
 
 const siteTreesStat = document.querySelector('#siteTreesStat');
@@ -11,6 +12,11 @@ const siteTreesStat = document.querySelector('#siteTreesStat');
 addTree.addEventListener('click',function () {
 
   window.location.href = "siteTreeBranch.html";
+});
+
+treeCount.addEventListener('click',function () {
+
+  window.location.href = "treeCounter.html";
 });
 
 siteTreesStat.addEventListener('click',function () {
