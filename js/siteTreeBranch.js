@@ -1,6 +1,8 @@
 const cancel = document.querySelector('#cancel');
 const accept = document.querySelector('#accept');
 const back = document.querySelector('.back');
+const back2 = document.querySelector('.back');
+
 
 
 
@@ -56,6 +58,10 @@ back.addEventListener('click', function(){
 });
 
 cancel.addEventListener('click', function(){
+  window.location.href = 'siteTrees.html';
+});
+//backwards
+back2.addEventListener('click', function(){
   window.location.href = 'siteTrees.html';
 });
 
