@@ -9,7 +9,7 @@ const btnSetting= document.querySelector('#btn_Setting');
 
 
 // Access password Setting
-const password = '123456';
+const password = '654321';
 // Password as typed by user in keypad at configLogin.html
 const keyEnter = [];
 
