@@ -1,0 +1,16 @@
+/*sadasdasdasdad */
+.cfMenu {
+    display: block;
+    width: 100%;
+    margin: 10% 0;
+    font-size: 2em;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-items: center;
+    /*background-color: lightgray;*/
+}
+
+.cfMenu button{
+    width: 100%;
+}

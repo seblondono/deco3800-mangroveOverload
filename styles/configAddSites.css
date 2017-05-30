@@ -1,0 +1,23 @@
+table{
+    font-size: 5em;
+}
+
+table td{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.3em;
+}
+
+input{
+    font-size: 0.4em;
+    border: 2px solid black;
+}
+
+select{
+    font-size: 0.4em;
+    border: 2px solid black;
+}
+
+tbody{
+    border: 2px solid black;
+}

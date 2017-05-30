@@ -1,0 +1,74 @@
+/* Generalized for all configuration style*/
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.cfContent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cfDirectory {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cfHeader {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cfHeader div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.cfHeader:before {
+  content: "\273F";
+  font-size: 15em;
+}
+
+#cfRoot {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+#cfCurrent {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+}
+
