@@ -1,0 +1,51 @@
+#boxplot {
+  width: 65%;
+  margin: 5%;
+}
+
+.siteStatOverview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.siteStat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statBox {
+  width: 80%;
+  height: 5em;
+}
+
+.statBox > label {
+  font-size: 3.5em;
+}
+
+.statBox > input {
+  font-size: 3.5em;
+  width: 50%;
+}
+
+/*.statBox label {
+  font-size: 3.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+#stat1, #stat2, #stat3,#stat4,#stat5,#stat6 {
+  justify-content: flex-center;
+  font-size: 3.5em;
+  width: 50%;
+  align-items: center;
+  padding: 0 3%;
+  margin-bottom:0.4 em;
+}*/
