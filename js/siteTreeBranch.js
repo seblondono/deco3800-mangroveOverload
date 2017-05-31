@@ -34,6 +34,7 @@ function checkFormSiteTreeBranch(){
 	  }
 	return true;
 }
+}
 
 //backwards
 back.addEventListener('click', function(){

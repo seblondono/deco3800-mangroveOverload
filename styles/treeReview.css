@@ -1,0 +1,112 @@
+#treeNumber {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5em;
+  margin: 0 5%;
+}
+
+.treeSpecies-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 5% 0 2% 0;
+  position: absolute;
+  top: 220px;
+  left: 0;
+}
+
+#treeSpecies, #treeHeight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+#treeSpecies h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  width: 30%;
+}
+
+#treeHeight h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  width: 50%;
+}
+
+#treeHeight p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  width: 50%;
+  line-height: 1.5em;
+  padding: 2% 3% 2% 4%;
+}
+
+#treeSpecies p {
+  min-width: 70%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  padding: 2% 3% 2% 4%;
+}
+
+.treeDBH {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 520px;
+  left: 0;
+}
+
+#treeBDH-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+
+.branch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  padding: 0 3%;
+  border-bottom: 1px solid black;
+}
+
+.branch h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.branch p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  width: 50%;
+  line-height: 1.5em;
+  padding: 2% 3% 2% 4%;
+}
+
+.treeOptions {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.treeOptions > button {
+  font-size: 3.5em;
+  margin: 5em 0;
+  padding: 0.6em;
+  background-color: lightgray;
+}
