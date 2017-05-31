@@ -58,6 +58,7 @@
   width: 60%;
   font-size: 3.5em;
   line-height: 1.8em;
+  padding-left: 0.5em;
   background-color: lightgray;
 }
 
@@ -77,6 +78,7 @@
   width: 60%;
   font-size: 3.5em;
   line-height: 1.8em;
+  padding-left: 0.5em;
   background-color: lightgray;
 }
 
@@ -96,5 +98,6 @@
   width: 60%;
   font-size: 3.5em;
   line-height: 1.8em;
+  padding-left: 0.5em;
   background-color: lightgray;
 }

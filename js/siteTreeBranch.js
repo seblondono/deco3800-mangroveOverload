@@ -7,48 +7,33 @@ const back = document.querySelector('.back');
 //Javascript fordward functionalities
 accept.addEventListener('click',function goToSiteTreeBranch() {
 
-if(checkFormSiteTreeBranch()==true) {	
+if(checkFormSiteTreeBranch()==true) {
 	console.log("fields have been validated");
 	window.location.href = "siteTrees.html";}
- else{ 
-  console.log("entries are not valid"); 
-  
-  
- } 
-
+ else{
+  console.log("entries are not valid");
+ }
 });
 
-function checkFormSiteTreeBranch(){ 
-	 var valueTreeHeight = document.querySelector('.treeHeight'); 
-	 
+function checkFormSiteTreeBranch(){
+	 var valueTreeHeight = document.querySelector('.treeHeight');
 	 var valueBranchesDBH=document.getElementsByClassName("branchDBH");
-	 
+
 	// var valid=true;
-	
+
 	//checks Numerical Values
 	if(isNaN(valueTreeHeight.value)|| valueTreeHeight.value==""){
-		
-	 // alert(console.log("please enter a number"));	  
+	 // alert(console.log("please enter a number"));
 	  return false;
-	}
-	else 
-		
+	} else {
 		for(i=0;i<5;i++){
-			
-		if(valueBranchesDBH[i].value!="" && isNaN(valueBranchesDBH[i].value)){
-			
-			console.log(valueBranchesDBH[i].value);	
-		
-	        return false;		 
-		     }
-		 
-	     }		
-	
-	console.log(valueTreeHeight.value);	 
+			if(valueBranchesDBH[i].value!="" && isNaN(valueBranchesDBH[i].value)){
+				console.log(valueBranchesDBH[i].value);
+	      return false;
+		  }
+	  }
 	return true;
 }
-
-
 
 //backwards
 back.addEventListener('click', function(){
@@ -58,4 +43,3 @@ back.addEventListener('click', function(){
 cancel.addEventListener('click', function(){
   window.location.href = 'siteTrees.html';
 });
-
