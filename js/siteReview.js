@@ -1,16 +1,13 @@
 
-const back = document.querySelector('.cancel');
-const review = document.querySelector('.yearBtn1');
-const click = document.querySelector('.yearBtn2');
+const back = document.querySelector('.back');
+const siteYears = document.querySelectorAll('.year');
 
 back.addEventListener('click', function(){
   window.location.href = 'site.html';
 });
 
-review.addEventListener('click', function(){
-  window.location.href = 'siteYearReview.html';
-});
+siteYears.forEach(year => year.addEventListener('click', (e) => reviewYear(e)));
 
-click.addEventListener('click', function(){
-  window.location.href = 'siteYearReview.html';
-});
+function reviewYear(e) {
+  window.location.href = "siteYearReview.html";
+}
