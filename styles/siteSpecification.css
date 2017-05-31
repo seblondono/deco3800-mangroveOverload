@@ -1,0 +1,142 @@
+
+.siteSpecifications {
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.siteSpecifications label {
+  font-size: 3em;
+}
+
+.siteSize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#siteDimensions {
+  font-size: 4em;
+  padding: 5% 0 0 0;
+}
+
+.siteLWS {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0 10% 0;
+}
+
+.siteLWS input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  width: 25%;
+  text-align: center;
+  background-color: #d3d3d3;
+}
+
+.siteOptionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.siteSpecies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 40px;
+}
+
+.species {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  width: 70%;
+  padding: 2% 3% 2% 4%;
+  background-color: #d3d3d3;
+}
+
+.siteThreshold {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 40px;
+}
+
+.threshold {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  width: 70%;
+  padding: 2% 3% 2% 4%;
+  background-color: #d3d3d3;
+}
+
+.recorder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  width: 70%;
+  padding: 2% 3% 2% 4%;
+  background-color: #d3d3d3;
+}
+
+.siteRecorder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 40px;
+}
+
+.siteDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5% 40px;
+}
+
+.date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  width: 70%;
+  padding: 2% 3% 2% 4%;
+  background-color: #d3d3d3;
+}
+
+.site-confirm-cancel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20% 2% 0 2%;
+}
+
+.site-cc {
+  display: block;
+  width: 40%;
+  font-size: 3.5em;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: lightgray;
+}
+
+.siteSizeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#siteLength, #siteWidth, #siteSection {
+  width: 80%;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
