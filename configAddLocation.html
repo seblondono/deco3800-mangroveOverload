@@ -11,77 +11,43 @@
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Style sheet -->
-    <link rel="stylesheet" href="styles/styleConfig.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/configAddLocations.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
-    <div class="cfContent">
-        <!-- Add content rows -->
-        <div class="cfDirectory">
-            <!-- Go Back arrow -->
-            <a href="configLocations.html"><i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i></a>
-            <!-- Configuration (cf) Header, Descript the roots and current pages-->
-            <div class="cfHeader">
-                <!-- With similar appearance to the usual header-->
-                <div>
-                    <!-- Root pages (superclasses) -->
-                    <span id="cfRoot">Configuration.Menu.Locations</span>
-                    <!-- Current Page Name-->
-                    <span id="cfCurrent">Add Location</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="cfAddTable">
-            <!-- Table of existing Locations, with its details. Each row represents one location, with corresponding info descripted in thead. Deleting rows are always available: the last item of each row is a "X" button that allows user to delete the row. -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Column</th>
-                        <th>Value</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <!-- This table body is scrollable-->
-                    <tr>
-                        <!-- Name -->
-                        <td>Name: </td>
-                        <td><input id="addName" class="addName" type="text" name="addName" placeholder="Location Name"></td>
-                    </tr>
-
-                    <tr>
-                        <!-- Latitude -->
-                        <td>Latitude: </td>
-                        <td><input id="addLat" class="addLat" type="text" name="addLat" placeholder="eg. 154.483928"></td>
-                    </tr>
-
-                    <tr>
-                        <!-- Longitude -->
-                        <td>Longitude: </td>
-                        <td><input id="addLong" class="addLong" type="text" name="addLong" placeholder="eg. -25.058478"></td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-        <div class="cfFooterOption">
-            <a href="configLocations.html">
-                <img id="cancel" src="images/cross.png" alt="Cancel">
-            </a>
-            <a href="">
-                <img id="accept" src="images/tick.png" alt="Accept">
-            </a>
-        </div>
+  <div class="siteContent">
+    <div class="siteInfo">
+      <!-- Go Back arrow -->
+      <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+      <div class="settingsTitle">
+        <h1>Add Location</h1>
+      </div>
     </div>
-    <script src="js/configAddLocation.js">
 
+    <div class="locations">
+      <div class="name">
+        <label for="locationName">Name:</label>
+        <input type="text" name="locationName" value="" placeholder="Location Name">
+      </div>
+      <div class="latitude">
+        <label for="locationLatitude">Latitude:</label>
+        <input type="text" name="locationLatitude" value="" placeholder="123.45678987">
+      </div>
+      <div class="longitude">
+        <label for="locationLongitude">Longitude:</label>
+        <input type="text" name="locationLongitude" value="" placeholder="156.34512389">
+      </div>
+    </div>
 
-    </script>
+    <div class="addLocation">
+      <img id="cancel" src="images/cross.png" alt="Cancel">
+      <img id="accept" src="images/tick.png" alt="Accept">
+    </div>
+  </div>
+  <script src="js/configAddLocation.js"></script>
 </body>
 
 </html>
