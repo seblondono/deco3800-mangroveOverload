@@ -1,5 +1,10 @@
 // Navigation dots in the bottom of siteYearReview
 var navDots = document.querySelectorAll('.navDots');
+const back = document.querySelector('.back');
+
+back.addEventListener('click', function(){
+  window.location.href = 'siteReview.html';
+});
 
 // Add click event listeners
 navDots.forEach(dot => dot.addEventListener("click", (e) => changeStat(e)));
