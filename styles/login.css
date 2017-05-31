@@ -1,7 +1,17 @@
 #queenslandGov {
   display: flex;
   width: 40%;
-  margin: 30% 0 20px 0;
+  margin: 15% 0 0 0;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .keys {
