@@ -153,7 +153,8 @@ button:focus {
 }
 
 .siteInfo {
-  position: absolute;
+  background-color: white;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -162,6 +163,7 @@ button:focus {
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
+  z-index: 2;
 }
 
 .site {
