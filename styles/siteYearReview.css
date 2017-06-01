@@ -30,16 +30,19 @@
 
 .statBox {
   width: 80%;
-  height: 5em;
+  height: 6em;
 }
 
 .statBox > label {
   font-size: 3.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-right: 1em;
 }
 
 .statBox > input {
   font-size: 3.5em;
   width: 50%;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .siteBottomNav {
@@ -71,6 +74,7 @@
   align-items: center;
   width: 100%;
   height: 85%;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #speciesReview {
@@ -101,6 +105,12 @@
   width: 80%;
   font-size: 3.5em;
   margin: 5% 0;
+}
+
+.siteSpecificationsReview span {
+  font-family: 'Roboto Slab', sans-serif;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 .stat-active {

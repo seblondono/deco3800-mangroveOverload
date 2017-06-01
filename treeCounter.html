@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/treeCounter.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
@@ -27,8 +28,6 @@
             <div>
               <!-- Site number -->
               <span id="siteNumber">659143</span>
-              <!-- Site location -->
-              <span id="siteLocation">Nudgee Beach</span>
               <span id="siteLocation">Tree Counter</span>
             </div>
           </div>
@@ -36,13 +35,13 @@
         <div class="counterClicker">
             <div id="counterDisplay"><h1>0</h1></div>
             <div class="counterControls">
-              <div class="minus"><span>-</span></div>
-              <div class="plus"><span>+</span></div>
+              <div class="minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+              <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
             </div>
-            <div class="counterButtons">
-              <div class="counterCancel"><span>Cancel</span></div>
-              <div class="counterConfirm"><span>Confirm</span></div>
-            </div>
+        </div>
+        <div class="counterButtons">
+          <button class="counterCancel cancel" type="button">Cancel</button>
+          <button class="counterConfirm confirm" type="button">Confirm</button>
         </div>
     </div>
     <script src="js/treeCounter.js" charset="utf-8"></script>

@@ -1,8 +1,26 @@
 .settingsTitle {
   width: 90%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 500;
   font-size: 2em;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+h1:before {
+  background-image: url("../images/mangroveTree.gif");
+  background-size: 2.8em 2.8em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 2.8em;
+  height: 2.8em;
+  content: "";
+  margin-right: 1em;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5em;
 }

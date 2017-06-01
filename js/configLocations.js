@@ -1,4 +1,4 @@
-var addLocation = document.querySelector('.addLocation > button');
+var addLocation = document.querySelector('#addLocation');
 var editLocation = document.querySelectorAll('.edit');
 var back = document.querySelector('.back');
 

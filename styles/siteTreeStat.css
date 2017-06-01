@@ -4,9 +4,12 @@
 }
 
 .siteStatOverview {
+  position: absolute;
+  top: 200px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
@@ -21,14 +24,17 @@
 
 .statBox {
   width: 80%;
-  height: 5em;
+  height: 6em;
 }
 
 .statBox > label {
   font-size: 3.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-right: 1em;
 }
 
 .statBox > input {
   font-size: 3.5em;
   width: 50%;
+  font-family: 'Roboto Slab', sans-serif;
 }

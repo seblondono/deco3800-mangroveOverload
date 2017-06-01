@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/siteTreeBranch.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
@@ -27,62 +28,63 @@
           <h1 id="treeNumber">Tree 1</h1>
       </div>
     </div>
-    <div class="treeSpecies-height">
-      <!-- Species -->
-      <div id="treeSpecies">
-        <label for="treeSpecies">Species</label>
-        <select class="treeSpecies" name="species">
-          <option value="species1">Species 1</option>
-          <option value="species2">Species 2</option>
-          <option value="species3">Species 3</option>
-          <option value="species4">Species 4</option>
-          <option value="species5">Species 5</option>
-        </select>
+
+    <div class="siteTreeBranch">
+      <div class="treeSpecies-height">
+        <!-- Species -->
+        <div id="treeSpecies">
+          <label for="treeSpecies">Species</label>
+          <select class="treeSpecies" name="species">
+            <option value="species1">Species 1</option>
+            <option value="species2">Species 2</option>
+            <option value="species3">Species 3</option>
+            <option value="species4">Species 4</option>
+            <option value="species5">Species 5</option>
+          </select>
+        </div>
+        <!-- Tree Height -->
+        <div id="treeHeight">
+            <label for="treeHeight">Tree Height</label>
+            <input class="treeHeight" type="text" name="treeHeight" placeholder="205 cm">
+        </div>
       </div>
-      <!-- Tree Height -->
-      <div id="treeHeight">
-          <label for="treeHeight">Tree Height</label>
-          <div>
-            <input class="treeHeight" type="text" name="treeHeight">
-            <label for="treeHeight">cm</label>
-          </div>
+
+      <div class="treeDBH">
+        <h1 id="treeBDH-header">Diameter at Breast Height</h1>
+        <div class="branch">
+            <label for="branch">B1</label>
+            <input class="branchDBH" type="text" name="branch">
+            <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+        </div>
+        <div class="branch">
+            <label for="branch">B2</label>
+            <input class="branchDBH" type="text" name="branch">
+            <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+        </div>
+        <div class="branch">
+            <label for="branch">B3</label>
+            <input class="branchDBH" type="text" name="branch">
+            <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+        </div>
+        <div class="branch">
+            <label for="branch">B4</label>
+            <input class="branchDBH" type="text" name="branch">
+            <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+        </div>
+        <div class="branch">
+            <label for="branch">B5</label>
+            <input class="branchDBH" type="text" name="branch">
+            <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+        </div>
+        <!-- Add branch -->
+        <i id="addBranch" class="fa fa-plus-square-o" aria-hidden="true"></i>
+      </div>
+      <div class="treeOptions">
+        <i id="cancel" class="fa fa-ban" aria-hidden="true"></i>
+        <i id="accept" class="fa fa-check-circle-o" aria-hidden="true"></i>
       </div>
     </div>
 
-    <div class="treeDBH">
-      <h1 id="treeBDH-header">Diameter at Breast Height</h1>
-      <div class="branch">
-          <label for="branch">B1</label>
-          <input class="branchDBH" type="text" name="branch">
-          <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
-      </div>
-      <div class="branch">
-          <label for="branch">B2</label>
-          <input class="branchDBH" type="text" name="branch">
-          <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
-      </div>
-      <div class="branch">
-          <label for="branch">B3</label>
-          <input class="branchDBH" type="text" name="branch">
-          <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
-      </div>
-      <div class="branch">
-          <label for="branch">B4</label>
-          <input class="branchDBH" type="text" name="branch">
-          <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
-      </div>
-      <div class="branch">
-          <label for="branch">B5</label>
-          <input class="branchDBH" type="text" name="branch">
-          <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
-      </div>
-      <!-- Add branch -->
-      <img id="addBranch" src="images/addBranch.png" alt="Add Branch">
-    </div>
-    <div class="treeOptions">
-      <img id="cancel" src="images/cross.png" alt="Cancel">
-      <img id="accept" src="images/tick.png" alt="Accept">
-    </div>
   </div>
   <script type="text/javascript" src="js/siteTreeBranch.js"></script>
 </body>
