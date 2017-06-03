@@ -46,11 +46,3 @@ back.addEventListener('click', function(){
 cancel.addEventListener('click', function(){
   window.location.href = 'siteTrees.html';
 });
-<<<<<<< HEAD
-//backwards
-back2.addEventListener('click', function(){
-  window.location.href = 'siteTrees.html';
-});
-
-=======
->>>>>>> af406aaf369912c8b765ec550bd09c251d57eb07
