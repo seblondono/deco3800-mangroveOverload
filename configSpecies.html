@@ -11,88 +11,86 @@
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Style sheet -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/configSpecies.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
-    <div class="cfContent">
-        <!-- Configuration content -->
-        <div class="cfDirectory">
-            <!-- Go Back arrow -->
-            <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
-            <!-- Configuration (cf) Header, Descript the roots and current pages-->
-            <div class="cfHeader">
-                <!-- With similar appearance to the usual header-->
-                <div>
-                    <!-- Root pages (superclasses) -->
-                    <span id="cfRoot">Configuration.Menu</span>
-                    <!-- Current Page Name-->
-                    <span id="cfCurrent">Species</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="cfTable">
-            <!-- Table of existing Locations, with its details. Each row represents one location, with corresponding info descripted in thead. Deleting rows are always available: the last item of each row is a "X" button that allows user to delete the row. -->
-            <div class="cfCountItems">
-                <!-- A summative view: count of rows; Using javascript to count rows in table-->
-                Total items:
-                <span class="cfCounts">6</span>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Delete</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <!-- This table body is scrollable-->
-                    <tr>
-                        <td>species 1</td>
-                        <th><button class="btnDelete" type="button" name="delRow1">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>species 2</td>
-                        <th><button class="btnDelete" type="button" name="delRow2">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>species 3</td>
-                        <th><button class="btnDelete" type="button" name="delRow3">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>species 4</td>
-                        <th><button class="btnDelete" type="button" name="delRow4">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>species 5</td>
-                        <th><button class="btnDelete" type="button" name="delRow5">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>species 6</td>
-                        <th><button class="btnDelete" type="button" name="delRow6">X</button></th>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-        <div class="cfFooter">
-            <a href="configAddSpecies.html">
-                <button class="btnAddLocation" type="button" name="addLoc"><img class="imgAddLoc" src="images/addConfig.png" alt="addLocation"></button>
-            </a>
-
-        </div>
+  <div class="siteContent">
+    <div class="siteInfo">
+      <!-- Go Back arrow -->
+      <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+      <div class="settingsTitle">
+        <h1>Species Settings</h1>
+      </div>
     </div>
-    <script type="text/javascript" src=""></script>
+
+    <div class="configSpecies">
+      <div class="specie">
+        <h1>Specie 1</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 2</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 3</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 4</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 5</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 6</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 7</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 8</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 9</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 10</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="specie">
+        <h1>Specie 11</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+    </div>
+
+    <div class="addSpecie">
+      <button><img src="images/addConfig.png" alt="addSpecie"></button>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/configSpecies.js"></script>
 </body>
 
 </html>

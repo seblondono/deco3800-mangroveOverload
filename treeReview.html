@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mangrove Monitoring App</title>
+    <!-- Font Awesome Library -->
+    <script src="https://use.fontawesome.com/5996448355.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/treeReview.css">
+    <!-- Google Fonts Roboto and Roboto Condenced -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
+</head>
+
+<body>
+  <div class="siteContent">
+    <!-- tree general information -->
+    <div class="siteInfo">
+      <!-- Go Back arrow -->
+      <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+      <div class="site">
+          <h1 id="treeNumber">Tree 1</h1>
+      </div>
+    </div>
+    <div class="treeSpecies-height">
+      <!-- Species -->
+      <div id="treeSpecies">
+        <h1>Species:</h1>
+        <p>Species 1</p>
+      </div>
+      <!-- Tree Height -->
+      <div id="treeHeight">
+        <h1>Tree Height:</h1>
+        <p>900 cm</p>
+      </div>
+    </div>
+
+    <div class="treeDBH">
+      <h1 id="treeBDH-header">Diameter at Breast Height</h1>
+      <div class="branch">
+        <h1>B1</h1>
+        <p>20 cm</p>
+        <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+      </div>
+      <div class="branch">
+        <h1>B2</h1>
+        <p>20 cm</p>
+        <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+      </div>
+      <div class="branch">
+        <h1>B3</h1>
+        <p>20 cm</p>
+        <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+      </div>
+      <div class="branch">
+        <h1>B4</h1>
+        <p>20 cm</p>
+        <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+      </div>
+      <div class="branch">
+        <h1>B5</h1>
+        <p>20 cm</p>
+        <img class="branchAlive" src="images/alive.png" alt="Brach is Alive">
+      </div>
+    </div>
+    <div class="treeOptions">
+      <button class="edit">Edit <i class="fa fa-pencil"></i></button>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/treeReview.js"></script>
+
+</body>
+
+</html>

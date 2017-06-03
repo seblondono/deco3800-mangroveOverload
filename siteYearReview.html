@@ -12,101 +12,90 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Style sheet -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/siteYearReview.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
-    <div class="siteStatOverview">
-        <!-- Site general information, page 1 -->
-        <div class="siteInfo">
-            <!-- Go Back arrow -->
-            <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
-            <div class="site">
-                <div>
-                    <!-- Site number -->
-                    <span id="siteNumber">659143</span>
-                    <!-- Site location -->
-                    <span id="siteLocation">Nudgee Beach</span>
-                </div>
+  <div class="siteContent">
+    <div class="siteInfo">
+        <!-- Go Back arrow -->
+        <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+        <div class="site">
+            <div>
+                <!-- Site number -->
+                <span id="siteNumber">659143</span>
+                <!-- Site location -->
+                <span id="siteLocation">Nudgee Beach</span>
             </div>
         </div>
-
-        <div class="siteStatGraph">
-            <!-- Stat Graph here-->
-            <img id="boxplot" src="images/boxplot.png" alt="Box plot!">
-        </div>
+    </div>
+    <div class="siteStatOverview">
+      <div class="siteStats stat-active">
+        <img id="boxplot" src="images/boxplot.png" alt="Box plot">
 
         <div class="siteStat">
-            <!-- All Stat here-->
-            <div class="statBox">
-                <label for="stat1">Min: </label>
-                <input id="stat1" type="text" name="stat1" value="N/A" disabled>
-            </div>
+          <!-- All Stat here-->
+          <div class="statBox">
+              <label for="stat1">Min:</label>
+              <input id="stat1" type="text" name="stat1" value="N/A" disabled>
+          </div>
 
-            <div class="statBox">
-                <label for="stat2">Max: </label>
-                <input id="stat2" type="text" name="stat2" value="N/A" disabled>
-            </div>
+          <div class="statBox">
+              <label for="stat2">Max:</label>
+              <input id="stat2" type="text" name="stat2" value="N/A" disabled>
+          </div>
 
-            <div class="statBox">
-                <label for="stat3">Medium: </label>
-                <input id="stat3" type="text" name="stat3" value="N/A" disabled>
-            </div>
+          <div class="statBox">
+              <label for="stat3">Medium:</label>
+              <input id="stat3" type="text" name="stat3" value="N/A" disabled>
+          </div>
 
-            <div class="statBox">
-                <label for="stat4">Std: </label>
-                <input id="stat4" type="text" name="stat4" value="N/A" disabled>
-            </div>
+          <div class="statBox">
+              <label for="stat4">Std:</label>
+              <input id="stat4" type="text" name="stat4" value="N/A" disabled>
+          </div>
 
-            <div class="statBox">
-                <label for="stat5">Sum: </label>
-                <input id="stat5" type="text" name="stat5" value="N/A" disabled>
-            </div>
+          <div class="statBox">
+              <label for="stat5">Sum:</label>
+              <input id="stat5" type="text" name="stat5" value="N/A" disabled>
+          </div>
 
-            <div class="statBox">
-                <label for="stat6">Mod: </label>
-                <input id="stat6" type="text" name="stat6" value="N/A" disabled>
-            </div>
-
-        </div>
-
-        <div class="siteFooter">
-            <!-- Indicating "dots" at the bottom of the page, page 1, left dim and right bright-->
-            <input class="leftPage" type="button">
-            <input class="rightPage" type="button">
-        </div>
-    </div>
-
-    <div class="siteSpec">
-        <!-- Site specifications, page 2-->
+          <div class="statBox">
+              <label for="stat6">Mod:</label>
+              <input id="stat6" type="text" name="stat6" value="N/A" disabled>
+          </div>
+        </div>  <!-- Close siteStat -->
+      </div>
+      <div class="siteSpecificationsReview">
         <!-- Species -->
-        <div id="siteSpec spec">Species: Species 1</div>
+        <div id="speciesReview">
+          <p>Species:<span>Species 1</span></p>
+        </div>
 
         <!-- Dimension and Date here -->
-        <div id="siteSpec dimn">Dimensions: 50 x 70m</div>
-        <div id="siteSpec sect">Section: NE</div>
+        <div id="dimReview"><p>Dimensions:<span>50 x 70m</span></p></div>
+        <div id="sectionReview"><p>Section:<span>NE</span></p></div>
 
         <!-- Recorded Date -->
-        <div id="siteSpec date">Date: 06/05/2017</div>
+        <div id="dateReview"><p>Date:<span>06/05/2017</span></p></div>
 
         <!-- Multiple recorders, shown in list form -->
-        <div id="siteSpec recd">Recorder:
+        <div id="recorderReview">Recorder:
             <ul>
-                <li>Foo</li>
-                <li>Bar</li>
-                <li>FooBar</li>
-                <li>Spam</li>
+                <li><span>Dr. Arnon Accad</span></li>
             </ul>
         </div>
-
-        <div class="siteFooter">
-            <!-- Indicating "dots" at the bottom of the page, page 2, left bright and right dim -->
-            <input class="leftPage" type="button">
-            <input class="rightPage" type="button">
-        </div>
+      </div>  <!-- Close siteSpecificationsReview -->
+    </div>  <!-- Close siteStatOverview -->
+    <div class="siteBottomNav">
+      <div class="navDots active"></div>
+      <div class="navDots"></div>
     </div>
-
+  </div>  <!-- Close siteContent -->
+  <script type="text/javascript" src="js/siteYearReview.js"></script>
 </body>
 
 </html>

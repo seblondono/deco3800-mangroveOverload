@@ -1,0 +1,94 @@
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.search-form {
+  width: 80%;
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 80%;
+}
+
+.suggestions li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid #0BA900;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-family: 'Roboto Condenced', sans-serif;
+  font-size: 2.8em;
+}
+
+.hl {
+  background: rgba(11, 169, 0, 0.6);
+}
+
+.searchBar {
+  position: absolute;
+  top: 40px;
+  left: 2.5%;
+  width: 95%;
+  height: 110px;
+  background-color: white;
+  border: 2px solid #0BA900;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+  z-index: 9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fa-microphone {
+  margin: 10px 20px;
+}
+
+.fa-chevron-left {
+  margin: 10px 30px;
+}
+
+#searchArea {
+  color: black;
+  font-family: 'Roboto Condenced', sans-serif;
+  font-size: 2.8em;
+  font-weight: lighter;
+  width: 100%;
+  height: 100px;
+}
+
+#searchArea::-webkit-input-placeholder {
+  font-weight: 100;
+  color: gray;
+}
+
+.currentLocation {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 90px;
+  right: 60px;
+  background-color: white;
+  border: 2px solid #0BA900;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+  z-index: 9;
+}
+
+#locationIcon {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3em;
+}

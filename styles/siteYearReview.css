@@ -1,0 +1,118 @@
+#boxplot {
+  width: 70%;
+  margin: 10% 0;
+}
+
+.siteStatOverview {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+}
+
+.siteStats {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+}
+
+.siteStat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statBox {
+  width: 80%;
+  height: 6em;
+}
+
+.statBox > label {
+  font-size: 3.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-right: 1em;
+}
+
+.statBox > input {
+  font-size: 3.5em;
+  width: 50%;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.siteBottomNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10em 0 3em 0;
+}
+
+.navDots {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 10px;
+}
+
+.active {
+  background-color: black;
+}
+
+.siteSpecificationsReview {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#speciesReview {
+  width: 80%;
+  font-size: 3.5em;
+  margin: 5% 0;
+}
+
+#dimReview {
+  width: 80%;
+  font-size: 3.5em;
+  margin: 5% 0;
+}
+
+#sectionReview {
+  width: 80%;
+  font-size: 3.5em;
+  margin: 5% 0;
+}
+
+#dateReview {
+  width: 80%;
+  font-size: 3.5em;
+  margin: 5% 0;
+}
+
+#recorderReview {
+  width: 80%;
+  font-size: 3.5em;
+  margin: 5% 0;
+}
+
+.siteSpecificationsReview span {
+  font-family: 'Roboto Slab', sans-serif;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.stat-active {
+  display: flex;
+}

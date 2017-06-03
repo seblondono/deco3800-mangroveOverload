@@ -1,0 +1,64 @@
+#queenslandGov {
+  width: 40%;
+  margin: 15% 0 0 0;
+}
+
+#instruction {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3em;
+  margin: 0.6em 0;
+  color: #3E3E3E;
+}
+
+.keys {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  padding: 0;
+  margin: 80px 0;
+}
+
+.keyBox {
+  width: 110px;
+  height: 110px;
+  border: 2px solid #0BA900;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 5em;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.numericPad {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.number {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  margin: 0;
+  padding: 20px 40px;
+  width: 33%;
+  height: 25%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.3em;
+  border-top: 1px solid #3e3e3e;
+  border-bottom: 1px solid #3e3e3e;
+  border-right: 1px solid #3e3e3e;
+}
+
+.number:active {
+  background-color: rgba(11, 169, 0, 0.6);
+}

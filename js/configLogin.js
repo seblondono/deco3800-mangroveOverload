@@ -8,12 +8,9 @@ const keyBoxes = document.querySelectorAll('.keyBox');
 const btnSetting= document.querySelector('#btn_Setting');
 
 
-
-
-
-// Access password
-const password = '123456';
-// Password as typed by user in keypad at login.html
+// Access password Setting
+const password = '654321';
+// Password as typed by user in keypad at configLogin.html
 const keyEnter = [];
 
 // From index.html to login.html
@@ -43,7 +40,7 @@ function keyPressed(e) {
 
     // checks if keys entered match password
     if (keyEnter.join('').includes(password)) {
-      window.location.href = 'locationMap.html';
+      window.location.href = 'configMenu.html';
     }
   }
 }

@@ -11,101 +11,86 @@
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Style sheet -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/configLocations.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
-    <div class="cfContent">
-        <!-- Configuration content -->
-        <div class="cfDirectory">
-            <!-- Go Back arrow -->
-            <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
-            <!-- Configuration (cf) Header, Descript the roots and current pages-->
-            <div class="cfHeader">
-                <!-- With similar appearance to the usual header-->
-                <div>
-                    <!-- Root pages (superclasses) -->
-                    <span id="cfRoot">Configuration.Menu</span>
-                    <!-- Current Page Name-->
-                    <span id="cfCurrent">Locations</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="cfTable">
-            <!-- Table of existing Locations, with its details. Each row represents one location, with corresponding info descripted in thead. Deleting rows are always available: the last item of each row is a "X" button that allows user to delete the row. -->
-            <div class="cfCountItems">
-                <!-- A summative view: count of rows; Using javascript to count rows in table-->
-                Total items:
-                <span class="cfCounts">6</span>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Latitude</th>
-                        <th>Longitude</th>
-                        <th>Delete</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <!-- This table body is scrollable-->
-                    <tr>
-                        <td>Loc 1</td>
-                        <td>120.44</td>
-                        <td>-32.33</td>
-                        <th><button class="btnDelete" type="button" name="delRow1">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>Loc 2</td>
-                        <td>120.44</td>
-                        <td>-32.33</td>
-                        <th><button class="btnDelete" type="button" name="delRow2">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>Loc 3</td>
-                        <td>120.44</td>
-                        <td>-32.33</td>
-                        <th><button class="btnDelete" type="button" name="delRow3">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>Loc 4</td>
-                        <td>120.44</td>
-                        <td>-32.33</td>
-                        <th><button class="btnDelete" type="button" name="delRow4">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>Loc 5</td>
-                        <td>120.44</td>
-                        <td>-32.33</td>
-                        <th><button class="btnDelete" type="button" name="delRow5">X</button></th>
-                    </tr>
-
-                    <tr>
-                        <td>Loc 6</td>
-                        <td>120.44</td>
-                        <td>-32.33</td>
-                        <th><button class="btnDelete" type="button" name="delRow6">X</button></th>
-                    </tr>
-                </tbody>
-            </table>
-
-        </div>
-
-        <div class="cfFooter">
-            <a href="configAddLocation.html">
-                <button class="btnAddLocation" type="button" name="addLoc"><img class="imgAddLoc" src="images/addConfig.png" alt="addLocation"></button>
-            </a>
-        </div>
+  <div class="siteContent">
+    <div class="siteInfo">
+      <!-- Go Back arrow -->
+      <i class="fa fa-chevron-left fa-3x back" aria-hidden="true"></i>
+      <div class="settingsTitle">
+        <h1>Location Settings</h1>
+      </div>
     </div>
-    <script type="text/javascript" src=""></script>
+
+    <div class="locations">
+      <div class="location">
+        <h1>Location 1</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 2</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 3</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 4</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 5</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 6</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 7</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 8</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 9</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 10</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+      <div class="location">
+        <h1>Location 11</h1>
+        <button class="edit"><i class="fa fa-pencil"></i></button>
+        <button class="delete"><i class="fa fa-trash-o"></i></button>
+      </div>
+    </div>
+
+    <div class="addLocation">
+      <i id="addLocation" class="fa fa-plus-square-o" aria-hidden="true"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/configLocations.js"></script>
 </body>
 
 </html>

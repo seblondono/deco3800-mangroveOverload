@@ -1,0 +1,65 @@
+.settingsTitle {
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.configSpecies {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: auto;
+  padding: 3em 0 280px 0;
+}
+
+.addSpecie {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+
+.configSpecies > div {
+  height: 7em;
+  margin: 1em 0;
+}
+
+.addSpecie > img {
+  margin: 7em 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.spciesName {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spciesName > label {
+  width: 100%;
+  font-size: 3.5em;
+  margin: 1.2em;
+}
+
+.spciesName > input {
+  width: 100%;
+  font-size: 3.5em;
+  line-height: 1.8em;
+  padding-left: 0.5em;
+  background-color: lightgray;
+}

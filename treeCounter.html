@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Style sheet -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/treeCounter.css">
     <!-- Google Fonts Roboto and Roboto Condenced -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
@@ -26,27 +28,22 @@
             <div>
               <!-- Site number -->
               <span id="siteNumber">659143</span>
-              <!-- Site location -->
-              <span id="siteLocation">Nudgee Beach</span>
               <span id="siteLocation">Tree Counter</span>
             </div>
           </div>
         </div>
         <div class="counterClicker">
-              <!-- Comment: I have done some researches online again this morning, the possibility of
-                    performing clicks via volume button on ios is very low (I wont say it is imposible coz
-                    I am not familiar with the dev environment, and in fact I ve seen a few posts suggested
-                    solution for that). Anyway, my point is that I have simplify the clicker interface, NO
-                    VOLUME BUTTON clicker and simply on screen buttons only. 2 buttons on screen: + and -;
-                -->
-            <div class="counterDisplay">0000</div>
-            <input type="button" value="-">
-            <input type="button" value="+">
-            <input type="button" value="Cancel">
-            <input type="button" value="Confirm">
+            <div id="counterDisplay"><h1>0</h1></div>
+            <div class="counterControls">
+              <div class="minus"><i class="fa fa-minus" aria-hidden="true"></i></div>
+              <div class="plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+            </div>
         </div>
-	  <script type="text/javascript" src="js/siteTreeBranch.js">
-    </script>
-
+        <div class="counterButtons">
+          <button class="counterCancel cancel" type="button">Cancel</button>
+          <button class="counterConfirm confirm" type="button">Confirm</button>
+        </div>
+    </div>
+    <script src="js/treeCounter.js" charset="utf-8"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+.settingsTitle {
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.sites {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+  overflow-x: auto;
+  padding: 3em 0 280px 0;
+}
+
+.configSite {
+  min-height: -webkit-min-content;
+  font-size: 2em;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.configSite > h1:first-child {
+  width: 20%;
+}
+
+.configSite > h1:last-child {
+  width: 40%;
+}
+
+.configSite > button {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 2.2em;
+}
+
+.addSite {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.addSite > button {
+  margin: 7em 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.addSite > button > img {
+  border-radius: 50%;
+}
